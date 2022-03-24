@@ -1,0 +1,62 @@
+$boxshadow-main: #1d1e1f;
+.main-section {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding-bottom: 1rem;
+  background: center / cover no-repeat
+    url("../assets/images/home/background-home-mobile.jpg");
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.home-paragraph {
+  max-width: 27.75rem;
+  margin: auto;
+}
+@media screen and(min-width: 48em) {
+  .main-section {
+    background-image: url("../assets/images/home/background-home-tablet.jpg");
+  }
+  .circle {
+    width: 242px;
+    height: 242px;
+    font-size: 2rem;
+    transition: 0.3s all;
+    &:hover {
+      box-shadow: 0 0 0 40px $boxshadow-main;
+    }
+  }
+  .body-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and(min-width: 62em) {
+  .main-section {
+    background-image: url("../assets/images/home/background-home-desktop.jpg");
+  }
+  .home-paragraph {
+    margin: auto 0;
+  }
+  .circle {
+    width: 274px;
+    height: 274px;
+    &:hover {
+      box-shadow: 0 0 0 70px $boxshadow-main;
+    }
+  }
+}
