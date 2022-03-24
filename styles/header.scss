@@ -144,9 +144,9 @@ body {
       opacity: 25.15%;
     }
   }
-  @supports (backdrop-filter: blur(1.5rem)) {
+  @supports (backdrop-filter: blur(24px)) {
     .nav-container {
-      backdrop-filter: blur(1.5rem);
+      backdrop-filter: blur(24px);
       background-color: rgba($color: $white, $alpha: 0.04);
     }
   }
@@ -175,9 +175,9 @@ body {
     margin: 0;
     opacity: 0;
   }
-  @supports (backdrop-filter: blur(1.5rem)) {
+  @supports (backdrop-filter: blur(24px)) {
     .nav-list {
-      backdrop-filter: blur(1.5rem);
+      backdrop-filter: blur(24px);
       background-color: rgba($color: white, $alpha: 0.04);
     }
   }
