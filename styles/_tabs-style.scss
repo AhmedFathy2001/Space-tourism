@@ -1,0 +1,19 @@
+.active-tab-element {
+  transition: 2s all;
+  position: static;
+  visibility: visible;
+  opacity: 1;
+}
+
+.tab-element {
+  top: -200%;
+  left: -200%;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+@media screen and(min-width: 48em) {
+  .w-md-50 {
+    width: 75%;
+  }
+}

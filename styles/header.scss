@@ -17,13 +17,6 @@ body {
 }
 
 .nav-text {
-  font-family: $font-secondary;
-  font-size: 1rem;
-  letter-spacing: 2.7px;
-  color: $white;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
   &.active::before,
   &::before {
     content: "";
@@ -43,9 +36,9 @@ body {
   padding: 17.5px 80px 17.5px 32px;
 }
 
-.logo,
-.nav-toggle {
+.logo {
   margin-top: 35px;
+  margin-left: 3rem;
   padding-right: 0;
 }
 .bold {
@@ -157,6 +150,7 @@ body {
 
 @media screen and (max-width: 47.999rem) {
   .nav-list {
+    z-index: 2;
     width: 66.7%;
     max-width: 21.875rem;
     overflow: auto;
@@ -167,6 +161,15 @@ body {
     padding-top: 100px;
     transition: 0.3s all;
     opacity: 1;
+  }
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  .logo,
+  .nav-toggle {
+    margin: 15px;
+    margin-bottom: 5px;
   }
   .hidden {
     width: 0;

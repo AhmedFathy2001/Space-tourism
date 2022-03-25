@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Space tourism">
     <title>Space Tourism</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/shared.css">
+    <link rel="stylesheet" href="./styles/technology.css">
     <link rel="shortcut icon" href="assets/images/shared/logo.svg" type="image/x-icon">
 </head>
 
-<body class="main-section">
-    <header class="header">
+<body class="main-section" outlines="0">
+    <header class="header mb-3">
         <nav class="container-fluid me-0">
             <div class="row justify-content-between">
-                <div class="col-2 logo ms-5 d-flex align-items-center">
+                <div class="col-2 logo d-flex align-items-center">
                     <img src="assets/images/shared/logo.svg" alt="logo">
                 </div>
-                <div id="navToggle" class="nav-toggle col-1 me-4">
+                <div id="navToggle" class="nav-toggle col-1 me-4 cursor-pointer">
                     <span class="bar1 position-absolute"></span>
                     <span class="bar2 position-absolute"></span>
                     <span class="bar3 position-absolute"></span>
@@ -28,8 +30,7 @@
 
                 <div class="col-md-9 col-lg-7 nav-list pe-0 hidden" id="navMenu">
                     <ul class="nav-container">
-                        <li class="nav-item active"><a class="nav-text active" href="index.html"><span
-                                    class="bold">00</span>
+                        <li class="nav-item"><a class="nav-text" href="index.html"><span class="bold">00</span>
                                 Home</a>
                         </li>
                         <li class="nav-item"><a class="nav-text" href="destinations.html"><span class="bold">01</span>
@@ -37,7 +38,8 @@
                         </li>
                         <li class="nav-item"><a class="nav-text" href="crew.html"><span class="bold">02</span> Crew</a>
                         </li>
-                        <li class="nav-item"><a class="nav-text" href="technology.html"><span class="bold">03</span>
+                        <li class="nav-item active"><a class="nav-text active" href="technology.html"><span
+                                    class="bold">03</span>
                                 Technology</a>
                         </li>
                     </ul>
@@ -45,6 +47,66 @@
             </div>
         </nav>
     </header>
+    <p class="text-center heading-5-condensed text-uppercase text-md-start text-white offset-lg-1"><span
+            class="ms-md-3 opacity-25">03
+        </span>SPACE LAUNCH 101</p>
+    <div class="row me-0 flex-lg-row-reverse">
+        <div class="col-12 col-lg-4 px-0 mb-3 mb-md-0 mt-3 mt-md-4 position-relative">
+            <div class="images w-md-100 mx-auto d-lg-block d-none">
+                <img src="./assets/images/technology/image-launch-vehicle-portrait.jpg"
+                    class="d-lg-block w-100 mw-50 mx-auto active-tab-element" alt="launch vehicle">
+                <img src="./assets/images/technology/image-space-capsule-portrait.jpg"
+                    class="d-lg-block w-100 mw-50 mx-auto tab-element" alt="space capsule">
+                <img src="./assets/images/technology/image-spaceport-portrait.jpg"
+                    class="d-lg-block w-100 mw-50 mx-auto tab-element" alt="spaceport">
+            </div>
+            <div class="images mx-0 px-0 mb-3 d-lg-none">
+                <img src="./assets/images/technology/image-launch-vehicle-landscape.png"
+                    class="d-lg-none w-100 active-tab-element" alt="launch vehicle">
+                <img src="./assets/images/technology/image-space-capsule-landscape.jpg"
+                    class="d-lg-none w-100 tab-element" alt="space capsule">
+                <img src="./assets/images/technology/image-spaceport-landscape.jpg"
+                    class="d-lg-none w-100 mx-auto tab-element" alt="spaceport">
+            </div>
+        </div>
+        <div class="row col-lg-7 offset-lg-1 flex-column flex-lg-row justify-content-lg-center align-content-lg-center">
+            <div class="col-lg-2 d-flex d-lg-block justify-content-center justify-content-lg-start mb-3">
+                <div class="nav-circle mb-lg-3 active-dot ms-0">1</div>
+                <div class="nav-circle mb-lg-3">2</div>
+                <div class="nav-circle me-0">3</div>
+            </div>
+            <div class="tab-text col-lg-10">
+                <p class="heading-4 color-primary text-center text-lg-start">THE TERMINOLOGY…</p>
+                <div class="text-center text-uppercase text-lg-start active-tab-element">
+                    <h3 class="heading-3">LAUNCH VEHICLE</h3>
+                    <p class="body-text px-3 w-md-50 px-md-5 mx-auto px-lg-0 mx-lg-0 text-transform-none">A launch
+                        vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's
+                        surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                        powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the
+                        launch</p>
+                </div>
+                <div class="text-center text-uppercase text-lg-start tab-element">
+                    <h3 class="heading-3">SPACEPORT</h3>
+                    <p class="body-text px-3 w-md-50 mx-auto px-lg-0 mx-lg-0 text-transform-none">A spaceport or
+                        cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for
+                        ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally
+                        situated to take advantage of the Earth’s rotation for launch.</p>
+                </div>
+                <div class="text-center text-uppercase text-lg-start tab-element">
+                    <h3 class="heading-3">SPACE CAPSULE</h3>
+                    <p class="body-text px-3 w-md-50 mx-auto px-lg-0 mx-lg-0 text-transform-none">
+                        A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to
+                        reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time
+                        during the flight. It includes a space gym, cinema, and plenty of other activities to keep
+                        you entertained.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/technology.js"></script>
 </body>
 
 </html>

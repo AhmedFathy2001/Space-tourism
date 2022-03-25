@@ -13,13 +13,13 @@ body {
     font-size: 5rem;
   }
   &-2 {
-    font-size: 6.25rem;
-  }
-  &-3 {
     font-size: 3.5rem;
   }
+  &-3 {
+    font-size: 1.5rem;
+  }
   &-4 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   &-5-condensed {
     font-family: $font-secondary;
@@ -44,6 +44,7 @@ body {
   font-family: $font-secondary;
   font-size: 0.9375rem;
   color: $text-primary;
+  line-height: 25px;
 }
 
 .bg-primary {
@@ -52,12 +53,30 @@ body {
 .color-primary {
   color: $text-primary;
 }
-
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 48rem) {
   .heading {
     &-1 {
       font-size: 9.375rem;
     }
+    &-2 {
+      font-size: 5rem;
+    }
+    &-3 {
+      font-size: 2.5rem;
+    }
+    &-4 {
+      font-size: 1.5rem;
+    }
+    &-5-condensed {
+      font-size: 1.25rem;
+    }
+  }
+  .body-text {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .heading {
     &-2 {
       font-size: 6.25rem;
     }
@@ -80,7 +99,6 @@ body {
       font-size: 0.875rem;
     }
   }
-
   .body-text {
     font-size: 1.125rem;
   }
@@ -88,4 +106,13 @@ body {
 
 .cursor-pointer {
   cursor: pointer;
+}
+.nav-text {
+  font-family: $font-secondary;
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
 }

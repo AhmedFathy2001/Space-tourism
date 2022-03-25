@@ -1,0 +1,47 @@
+@use "./tabs-style";
+.main-section {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: center / cover no-repeat
+    url("../assets/images/crew/background-crew-mobile.jpg");
+}
+.nav-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 17.44%;
+  margin: 0 10px;
+  transition: 0.3s all;
+  cursor: pointer;
+  &:hover {
+    opacity: 50%;
+  }
+  &.active-dot {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 48em) {
+  .main-section {
+    background-image: url("../assets/images/crew/background-crew-tablet.jpg");
+  }
+  .images img {
+    height: 400px;
+    aspect-ratio: 1;
+    width: fit-content;
+    min-width: 350px;
+  }
+  .w-md-100 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 62em) {
+  .main-section {
+    background-image: url("../assets/images/crew/background-crew-desktop.jpg");
+  }
+}
+
+.text-transform-none {
+  text-transform: none;
+}

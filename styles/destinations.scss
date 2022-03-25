@@ -1,0 +1,58 @@
+@use "./tabs-style";
+.main-section {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding-bottom: 1rem;
+  background: center / cover no-repeat
+    url("../assets/images/destination/background-destination-mobile.jpg");
+}
+
+.tab-item {
+  padding: 5px 10px;
+  & .nav-text {
+    color: #d0d6f9;
+    cursor: pointer;
+    &.active-tab {
+      color: white;
+    }
+  }
+  &:hover .nav-text::before {
+    width: 100%;
+  }
+}
+.tab-item .nav-text {
+  font-size: 0.875rem;
+  &.active-tab::before,
+  &::before {
+    bottom: -10px;
+    height: 3px;
+    width: 100%;
+    opacity: 1;
+  }
+  &::before {
+    opacity: 50%;
+    width: 0;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .main-section {
+    background-image: url("../assets/images/destination/background-destination-tablet.jpg");
+  }
+}
+@media screen and (min-width: 62em) {
+  .main-section {
+    background-image: url("../assets/images/destination/background-destination-desktop.jpg");
+  }
+  .body-text {
+    margin-left: 7.5px !important;
+  }
+  .active-tab-element {
+    transition: 750ms all ease-in-out;
+  }
+  .tab-element {
+    overflow: hidden;
+    width: 0 !important;
+  }
+}
